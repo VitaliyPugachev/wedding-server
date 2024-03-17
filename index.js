@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 
-const PORT = config.get('port');
+const PORT = process.env.PORT || config.get('port');
 const app = express();
 
 app.use(express.json());
